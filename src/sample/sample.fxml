@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="843.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+        <children>
+           <Label layoutX="499.0" layoutY="51.0" text="DICTIONARY">
+              <font>
+                 <Font name="Times New Roman" size="36.0" />
+              </font>
+           </Label>
+           <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="723.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                 <Image url="@image/icons8-dictionary-100.png" />
+              </image>
+           </ImageView>
+           <TabPane layoutY="136.0" prefHeight="708.0" prefWidth="1223.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                 <Tab text="Dịch">
+                    <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                         <TextField layoutX="40.0" layoutY="42.0" prefHeight="63.0" prefWidth="333.0" />
+                         <ListView layoutX="41.0" layoutY="130.0" prefHeight="482.0" prefWidth="333.0" />
+                         <WebView layoutX="420.0" layoutY="38.0" prefHeight="558.0" prefWidth="763.0" />
+                         <Button layoutX="1061.0" layoutY="51.0" mnemonicParsing="false" text="Delete" />
+                         <Button layoutX="956.0" layoutY="51.0" mnemonicParsing="false" text="Edit" />
+                         <Button layoutX="558.0" layoutY="51.0" mnemonicParsing="false" text="US" />
+                         <Button layoutX="625.0" layoutY="51.0" mnemonicParsing="false" text="UK" />
+                      </children>
+                   </AnchorPane>
+                    </content>
+                 </Tab>
+                 <Tab text="Thêm">
+                    <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                         <TextField layoutX="384.0" layoutY="49.0" prefHeight="71.0" prefWidth="456.0" />
+                         <TextArea layoutX="82.0" layoutY="191.0" prefHeight="364.0" prefWidth="1059.0" text="&#10;" />
+                         <Text layoutX="584.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giải thích" wrappingWidth="90.6865234375" />
+                      </children>
+                   </AnchorPane>
+                    </content>
+                 </Tab>
+                 <Tab text="Dịch văn bản">
+                    <content>
+                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                             <ComboBox layoutX="201.0" layoutY="48.0" prefWidth="150.0" promptText="Ngôn ngữ" />
+                             <ComboBox layoutX="871.0" layoutY="63.0" prefWidth="150.0" promptText="Ngôn ngữ" />
+                             <TextArea layoutX="50.0" layoutY="118.0" prefHeight="408.0" prefWidth="452.0" />
+                             <TextArea layoutX="720.0" layoutY="124.0" prefHeight="408.0" prefWidth="452.0" />
+                             <Button layoutX="577.0" layoutY="300.0" mnemonicParsing="false" text="Dịch" />
+                          </children>
+                       </AnchorPane>
+                    </content>
+                 </Tab>
+              </tabs>
+           </TabPane>
+        </children>
+     </AnchorPane>
+  </items>
+</SplitPane>
